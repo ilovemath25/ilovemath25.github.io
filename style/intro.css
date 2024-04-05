@@ -1,0 +1,130 @@
+.profile{
+   position: absolute;
+   inset: 15px;
+   border-radius: 50%;
+   border: 3px solid #de4040;
+   z-index: 3;
+}
+.profile img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+.profile-border{
+   aspect-ratio: 1/1;
+   border-radius: 50%;
+   background-color: black;
+   animation: fade 1.5s;
+   padding: 10px;
+   margin: 30px;
+   position: relative;
+   overflow: hidden;
+}
+.profile-border::before{
+   content: '';
+   position: absolute;
+   inset: -10px 40px;
+   background: #de4040;
+   animation: border-rotate 4s linear infinite;
+}
+.profile-border::after{
+   content: '';
+   position: absolute;
+   inset: 6px;
+   background: black;
+   border-radius: 50%;
+   z-index: 1;
+}
+.bg{
+   z-index: -1;
+   position: absolute;
+   top: 80px;
+}
+.intro{
+   position: relative;
+   overflow: hidden;
+}
+.intro-content section{
+   margin: 60px;
+   width: 350px;
+}
+.main-text{
+   width: 0;
+   overflow: hidden;
+   color: white;
+   border-right: 1px solid white;
+   font-family: sans-serif;
+   margin: 5px;
+   white-space: nowrap;
+   animation: typing 1.5s steps(40) forwards;
+}
+.text4{border-right: 1px solid #de4040;}
+.fa-hand{
+   color: #fff765;
+   position: absolute;
+   top: 38%;
+   left: 32%;
+   transform: scale(0) rotate(40deg);
+   animation: wavinghand 2.5s infinite;
+   transform-origin: 70% 70%;
+}
+@media screen and (min-width:900px) { /* pc */
+   .intro-content{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+   }
+   .intro{
+      height: 600px;
+   }
+   .fa-hand{
+      left: 37%;
+   }
+   .profile-border{
+      height: 255px;
+      margin-left: 50px;
+   }
+   .profile{inset: 17px;}
+   .text1{font-size: 30px;}
+   .text3{font-size: 40px;}
+   .bg{right: 0;}
+}
+@media screen and (max-width:900px) { /* mobile1 */
+   .profile-border{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 30px;
+      height: 205px;
+   }
+   .intro{
+      height: 700px;
+   }
+   .text1{
+      font-size: 25px;
+   }
+   .text2{font-size: 12px;}
+   .text3{font-size: 30px;}
+   .text4{font-size: 14px;}
+   .text5{font-size: 12px;}
+}
+@media screen and (max-width:400px) { /* mobile2 */
+   .profile-border{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 30px;
+      height: 175px;
+   }
+   .intro{
+      height: 600px;
+   }
+   .text1{font-size: 25px;}
+   .text2{font-size: 12px;}
+   .text3{font-size: 30px;}
+   .intro-content section{margin: 35px;}
+}

@@ -1,0 +1,98 @@
+.title-and-description{
+   color: white;
+   background-color: #3f3f3f;
+   display: flex;
+   margin: 40px 10%;
+   border-radius: 20px;
+   font-family: system-ui;
+   position: relative;
+   height: auto;
+}
+.title{
+   font-weight: bold;
+   padding: 30px;
+   font-size: 40px;
+}
+.description{
+   text-align: justify;
+   text-indent: 3em;
+   padding: 30px;
+   font-size: 16px;
+}
+.mobile-and-pc{
+   display: flex;
+   margin: 40px 10%;
+}
+.pc-only{margin: 40px 0px;}
+.overview{
+   display: flex;
+   margin: auto;
+   border: 1px solid #de4040;
+   border-radius: 15px;
+}
+.overview-mobile{width: 20%;}
+.overview-pc{width: 70%;}
+.back-button{
+   display: flex;
+   background-color: #4a4a4a;
+   border-radius: 20px;
+   padding: 20px;
+   justify-content: center;
+   color: white;
+   cursor: pointer;
+}
+.button-1{
+   margin: 20px;
+   width: 50px;
+}
+.button-2{
+   display: flex;
+   margin: auto;
+   width: 30%;
+}
+.back-button:hover{
+   background-color: #de4040;
+   transition: all 0.5s;
+}
+.back-button:active{
+   transition: all 0s;
+   background-color: #b22828;
+}
+@media screen and (min-width:900px){
+   .title-and-description{height: auto;}
+   .title{
+      position: relative;
+      left: 0;
+      width: 50%;
+   }
+   .description{
+      position: relative;
+      right: 0;
+      font-size: 20px;
+      width: 500px;
+   }
+   .small-img{
+      width: 60%;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+   }
+}
+@media screen and (max-width:900px) {
+   .title-and-description{display: block;}
+   .title{
+      font-size: 35px;
+      width: 80%;
+      padding-bottom: 0px;
+   }
+   .description{
+      text-indent: 2em;
+      font-size: 14px;
+      width: 80%;
+      padding: 30px;
+   }
+}
+@media screen and (max-width:500px) {
+   .title{font-size: 25px;}
+   .description{font-size: 12px;}
+}

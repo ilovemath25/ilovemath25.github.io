@@ -1,0 +1,141 @@
+.show-up-animation{
+   z-index: 1000;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #282828;
+   animation: showup 1s forwards;
+}
+@keyframes showup{
+   0% {
+      transform: translateY(0px);
+      border-radius: 0%;
+   } 
+   99% {
+      transform: translateY(-100%);
+      border-radius: 50%;
+   }
+   100% {
+      transform: translateY(-100%);
+      border-radius: 0;
+   }
+}
+@keyframes border-rotate {
+   0%{transform: rotate(0deg);}
+   0%{transform: rotate(360deg);}
+}
+@keyframes loading {
+   from{width: 0;}
+   to{width: 100%;}
+}
+@keyframes showmenu{
+   from {
+      transform: translateX(-40vh);
+      border-radius: 60%;
+   } 
+   to {
+      transform: translateX(0px);
+      border-radius: 0;
+   }
+}
+@keyframes hidemenu{
+   from {
+      transform: translateX(0px);
+      border-radius: 0;
+   } 
+   to {
+      transform: translateX(-40vh);
+      border-radius: 60%;
+   }
+}
+@keyframes showcircle {
+   from {
+      transform: translateY(0px);
+   } 
+   to {
+      transform: translateY(-120px);
+   }
+}
+@keyframes hidecircle {
+   from {
+      transform: translateY(-120px);
+   } 
+   to {
+      transform: translateY(0px);
+   }
+}
+@keyframes project_trans {
+   to{
+      padding: 1000px;
+      transform: scale(10);
+      background-color: #282828;
+   }
+}
+@keyframes normal-menu {
+   from{
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(50%);
+   }
+   to{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+   }
+}
+@keyframes typing {
+   0%{ width: 0;}
+   99%{width: 100%;border-right: 1px solid white;}
+   100%{width: 100%;border-right: 1px solid black;}
+}
+@keyframes fade {
+   from{
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(50%);
+      transition: all 1s;
+   }
+   to{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+   }
+}
+@keyframes pop {
+   from{
+      opacity: 0;
+      filter: blur(5px);
+      transform: scale(0) rotate(40deg);
+   }
+   to{
+      opacity: 1;
+      filter: blur(0);
+      transform: scale(1.5) rotate(40deg);
+   }
+}
+@keyframes wavinghand {
+   0%{
+      transform: scale(1.5) rotate(40deg);
+   }
+   10%{
+      transform: scale(1.5) rotate(60deg);
+   }
+   20%{
+      transform: scale(1.5) rotate(30deg);
+   }
+   30%{
+      transform: scale(1.5) rotate(60deg);
+   }
+   40%{
+      transform: scale(1.5) rotate(30deg);
+   }
+   50%{
+      transform: scale(1.5) rotate(60deg);
+   }
+   60%{
+      transform: scale(1.5) rotate(40deg);
+   }
+   100%{
+      transform: scale(1.5) rotate(40deg);
+   }
+}
