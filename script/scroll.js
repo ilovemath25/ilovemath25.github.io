@@ -87,8 +87,3 @@ window.addEventListener('resize',() => {
    showcircle.unobserve(hiddencircle);
    showcircle.observe(hiddencircle);
 });
-window.addEventListener('scroll',() => {
-   var y = window.scrollY;
-   document.querySelector(".nothing").style.height = y/2.5 + 'px';
-   console.log(y);
-});
