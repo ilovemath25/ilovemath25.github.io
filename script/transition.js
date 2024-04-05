@@ -6,6 +6,7 @@ function project_transition(index,link){
    project.style.zIndex = '200'
    project.style.cursor = "default";
    project.style.animation = "project_trans 1s";
+   project.style.animationFillMode = "none";
    project.innerHTML = "";
    window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
 }
@@ -20,6 +21,7 @@ function home_transition(menu,index,link){
    html.style.overflow = 'hidden';
    nav.style.zIndex = '200';
    nav.style.animation = "project_trans 1s";
+   nav.style.animationFillMode = "none";
    nav.style.cursor = "default";
    nav.innerHTML = "";
    window.setTimeout(function(){window.history.back();},300);
