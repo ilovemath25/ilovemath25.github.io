@@ -72,7 +72,7 @@ const showcircle = new IntersectionObserver((entries) => {
    });
 },{threshold:1,rootMargin:"100px"});
 const hiddenElements = document.querySelectorAll('.hidden');
-if (window.location.href.includes("index")){
+if (!(window.location.href.includes("project"))){
    const hiddenskill = document.querySelector(".skill");
    const hiddentool = document.querySelector(".devtool");
    showskill.observe(hiddenskill);
