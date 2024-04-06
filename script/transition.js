@@ -23,7 +23,7 @@ function home_transition(menu,index,link){
    nav.style.animation = "project_trans 1s";
    nav.style.cursor = "default";
    nav.innerHTML = "";
-   window.setTimeout(function(){window.history.back();},300);
+   window.setTimeout(function(){window.location.href = '';},300);
    window.reload(true);
 }
 function reload(){
