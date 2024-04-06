@@ -8,9 +8,6 @@ function project_transition(index,link){
    project.style.animation = "project_trans 1s";
    project.innerHTML = "";
    window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
-   window.onload = function() {
-      window.location.reload(true);
-  };
 }
 function home_transition(menu,index,link){
    const html = document.querySelector('html');
@@ -26,7 +23,7 @@ function home_transition(menu,index,link){
    nav.style.cursor = "default";
    nav.innerHTML = "";
    window.setTimeout(function(){window.history.back();},300);
-   window.onload = function() {
-      window.location.reload(true);
-  };
+}
+function reload(){
+   window.reload(true);
 }
