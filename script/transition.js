@@ -7,13 +7,13 @@ function project_transition(index,link){
       children[i].style.display='none';
    }
    project.style.animation = "project_trans 1s";
-   window.setTimeout(function(){
+   window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
+   setTimeout(function(){
+      html.style.overflow = 'visible';
       for(var i=0;i<children.length;i++){
          children[i].style.display='block';
       }
-      html.style.overflow = 'visible';
-      window.location.href = 'project/'+link+'.html';
-   },600);
+   },700);
 }
 function home_transition(menu,index,link){
    const html = document.querySelector('html');
