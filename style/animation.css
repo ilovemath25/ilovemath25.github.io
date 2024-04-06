@@ -65,15 +65,7 @@
    }
 }
 @keyframes project_trans {
-   from{
-      opacity: 1;
-      z-index: '200';
-      cursor: "default";
-   }
    to{
-      opacity: 1;
-      z-index: '200';
-      cursor: "default";
       padding: 1000px;
       transform: scale(10);
       background-color: #282828;
