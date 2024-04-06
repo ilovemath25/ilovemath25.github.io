@@ -2,12 +2,18 @@ function project_transition(index,link){
    const html = document.querySelector('html');
    const project = document.querySelectorAll('.project li')[index];
    html.style.overflow = 'hidden';
-   project.style.opacity = '1';
-   project.style.zIndex = '200'
-   project.style.cursor = "default";
+   var children = project.children;
+   for(var i=0;i<children.length;i++){
+      children[i].style.display='none';
+   }
    project.style.animation = "project_trans 1s";
-   project.innerHTML = "";
-   window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
+   window.setTimeout(function(){
+      for(var i=0;i<children.length;i++){
+         children[i].style.display='block';
+      }
+      html.style.overflow = 'visible';
+      window.location.href = 'project/'+link+'.html';
+   },600);
 }
 function home_transition(menu,index,link){
    const html = document.querySelector('html');
