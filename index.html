@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="./style/project.css">
    <link rel="stylesheet" href="./style/footer.css">
 </head>
-<body>
+<body onload="link_load()">
    <div class="show-up-animation"></div>
    <div class="smooth-scroll-wrapper">
       <header>
@@ -255,21 +255,24 @@
          <article>
             <ul class="project">
                <li>
-                  <a class="view-project" onclick="project_transition(3,'animaldoku')">View</a>
+                  <a class="view-project" onclick="project_transition(3,'tetris')">View</a>
+                  <img src="./image/project/tetris.jpg" height="100">
+                  <p>Tetris (2024)</p>
+               </li>
+               <li>
+                  <a class="view-project" onclick="project_transition(4,'animaldoku')">View</a>
                   <img src="./image/project/animaldoku.jpg" height="100">
                   <p>Animaldoku (2024)</p>
                </li>
                <li>
-                  <a class="view-project" onclick="project_transition(4,'snake')">View</a>
+                  <a class="view-project" onclick="project_transition(5,'snake')">View</a>
                   <img src="./image/project/snake.jpg" height="100">
                   <p>Snake (2023)</p>
                </li>
-               <li>
-                  <a class="view-project" onclick="project_transition(5,'xoxo')">View</a>
-                  <img src="./image/project/xoxo.jpg" height="100">
-                  <p>XOXO (2023)</p>
-               </li>
             </ul>
+            <div class="show-more">
+               <hr><div onclick="show_more()">Show More</div><hr>
+            </div>
          </article>
       </main>
       <footer>
@@ -287,6 +290,7 @@
       </footer>
    </div>
    <script src="./script/scroll.js"></script>
+   <script src="./script/project.js"></script>
    <script src="./script/transition.js"></script>
 </body>
 </html>

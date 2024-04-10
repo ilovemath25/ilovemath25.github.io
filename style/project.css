@@ -54,6 +54,24 @@
    background-color: #b22828;
    transition: all 0s;
 }
+.show-more{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.show-more div{
+   text-align: center;
+   padding: 10px 5%;
+   border-radius: 20px;
+   border: 1px solid #3f3f3f;
+   color: white;
+   cursor: pointer;
+}
+.show-more div:hover{background-color: #3f3f3f;}
+.show-more hr{
+   border-color: #3f3f3f;
+   width: 35%;
+}
 @media screen and (min-width:900px){
    .project li{width: 30%;}
 }

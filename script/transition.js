@@ -22,5 +22,7 @@ function home_transition(menu,index,link){
    nav.style.animation = "project_trans 1s";
    nav.style.cursor = "default";
    nav.innerHTML = "";
-   window.setTimeout(function(){window.location.replace(document.referrer);},300);
+   window.setTimeout(function(){window.location.href = "../index.html";},300);
+   if (!link==""){localStorage.setItem("link",link);}
+   else{localStorage.clear();}
 }
