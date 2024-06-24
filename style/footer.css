@@ -1,0 +1,62 @@
+footer{position: relative;}
+.footer-line{
+   margin-top: 30px;
+   background-image: linear-gradient(to right,#00000000,#de4040,#00000000);
+   width: 100%;
+   height: 2px;
+}
+footer section{
+   padding: 30px;
+   background-color: black;
+}
+.sosmed{
+   display: flex;
+   justify-content: center;
+}
+.sosmed i{
+   color: white;
+   margin: 10px;
+   font-size: 20px;
+   transition: color 0.3s ease;
+}
+footer p{
+   color: white;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+}
+.signature{
+   position: absolute;
+   top: 25%;
+   right: 50px;
+}
+.sosmed i:hover{color: #de6e6e;}
+@media screen and (min-width:900px){
+   .signature{
+      width: 120px;
+      height: 120px;
+   }
+}
+@media screen and (max-width:900px){
+   footer{margin-bottom: 51px;}
+   .signature{
+      width: 100px;
+      height: 100px;
+   }
+}
+@media screen and (max-width:500px){
+   footer{margin-bottom: 51px;}
+   .signature{
+      width: 80px;
+      height: 80px;
+      right: 30px;
+   }
+}
+@media screen and (max-width:350px){
+   footer{margin-bottom: 51px;}
+   .signature{
+      width: 70px;
+      height: 70px;
+      right: 20px;
+   }
+}

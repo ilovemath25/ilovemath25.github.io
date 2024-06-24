@@ -1,0 +1,87 @@
+.project{
+   width: 90%;
+   margin: 30px 5%;
+   display: flex;
+   justify-content: space-around;
+   flex-flow: wrap;
+}
+.project li{
+   opacity: 0;
+   background-color: #3f3f3f;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 15px;
+   padding: 10px;
+   position: relative;
+   cursor: pointer;
+}
+.project li p{
+   color: white;
+   width: 90%;
+   margin: 10px 5%;
+}
+.project li img{
+   width: 98%;
+   margin: 5px 1%;
+   border-radius: 5px;
+   border: 1px #de4040 solid;
+   height: auto;
+   transition: background-color 0.3s ease;
+}
+.view-project{
+   color: white;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 0%;
+   border-radius: 15px 15px 60% 60%;
+   z-index: 0;
+   transition: all 0.4s;
+}
+.project li:hover .view-project{
+   opacity: 1;
+   height: 100%;
+   background-color: #de4040;
+   border-radius: 15px;
+   transition: all 0.5s;
+}
+.project li:active .view-project{
+   background-color: #b22828;
+   transition: all 0s;
+}
+.show-more,.show-more-2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.show-more div,.show-more-2 div{
+   text-align: center;
+   padding: 10px 5%;
+   border-radius: 20px;
+   border: 1px solid #3f3f3f;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.show-more div:hover{background-color: #3f3f3f;}
+.show-more-2 div:hover{background-color: #3f3f3f;}
+.show-more hr,.show-more-2 hr{
+   border-color: #3f3f3f;
+   width: 35%;
+}
+@media screen and (min-width:900px){
+   .project li{width: 30%;}
+}
+@media screen and (max-width:900px){
+   .project li{width: 45%;}
+}
+@media screen and (max-width:500px){
+   .project li{width: 90%;}
+}
