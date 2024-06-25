@@ -95,4 +95,14 @@
 @media screen and (max-width:500px) {
    .title{font-size: 25px;}
    .description{font-size: 12px;}
+   .mobile-and-pc{
+      display: block;
+   }
+   .overview-mobile{
+      width: 60%;
+      margin: 40px auto;
+   }
+   .overview-pc{
+      width: 80%;
+   }
 }
