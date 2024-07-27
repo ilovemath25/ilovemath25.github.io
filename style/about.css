@@ -33,7 +33,6 @@
    display: flex;
    padding-bottom: 10px;
 }
-.devtool li{flex-flow: wrap;}
 .skill data{
    width: 100%;
 }
@@ -57,18 +56,31 @@
    top: -18px;
    right: -15px;
 }
+.devtool li{flex-flow: wrap;}
 .tool{
    opacity: 0;
-   display: flex;
+   position: relative;
    margin: 0px 10px 10px 10px;
+   width: 140px;
+   height: 55px;
+}
+.tool-item{
+   display: flex;
    background-color: #5a5a5a;
-   padding: 5px 10px;
    overflow: hidden;
    border-radius: 15px;
+   width: 100%;
+   padding: 5px;
+   cursor: pointer;
+   position: absolute;
+   transition: all 0.2s;
 }
-.tool p{
+.tool-item p{
    margin: auto;
    margin-left: 10px;
+}
+.tool-item:hover{
+   transform: scale(1.1);
 }
 @media screen and (min-width:900px){ /* pc */
    .about-and-skill{
@@ -146,4 +158,9 @@
    }
    .skill-bar{height: 7px;}
    .devtool li{display: block;}
+   .tool{
+      margin: 0;
+      margin-bottom: 10px;
+      width: 100%;
+   }
 }
