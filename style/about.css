@@ -35,7 +35,7 @@
 }
 .skill-item data{
    width: 100%;
-   cursor: pointer;
+   user-select: none;
 }
 .skill-bar-background{
    transition: all 0.2s;

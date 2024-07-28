@@ -2,8 +2,8 @@
    width: 90%;
    margin: 30px 5%;
    display: flex;
-   justify-content: space-around;
-   flex-flow: wrap;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 .project li{
    opacity: 0;
