@@ -20,21 +20,25 @@
    margin-bottom: 15px;
    font-weight: bold;
 }
-.skill li img{
+.skill-icon{
    opacity: 0;
    margin-right: 10px;
    overflow: hidden;
 }
-.skill li .skill-name{
+.skill-item .skill-name{
    width: 0;
    overflow: hidden;
 }
-.skill li,.devtool li{
+.skill-item,.devtool li{
    display: flex;
    padding-bottom: 10px;
 }
-.skill data{
+.skill-item data{
    width: 100%;
+   cursor: pointer;
+}
+.skill-bar-background{
+   transition: all 0.2s;
 }
 .skill-bar{
    width: 0;
@@ -55,6 +59,9 @@
    border-radius: 3px;
    top: -18px;
    right: -15px;
+}
+.skill-item data:hover .skill-bar-background{
+   box-shadow: 6px 6px 5px #242424;
 }
 .devtool li{flex-flow: wrap;}
 .tool{

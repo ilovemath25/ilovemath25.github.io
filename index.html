@@ -132,65 +132,65 @@
                <div class="skill-and-devtool">
                   <ul class="skill">
                      <li class="speak">Languages that I speak :</li>
-                     <li>
-                        <img src="./image/skill/html.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/html.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">HTML</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 80%;"><mark>80%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/css.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/css.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">CSS</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 70%;"><mark>70%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/javascript.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/javascript.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">Javascript</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 60%;"><mark>60%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/python.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/python.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">Python</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 90%;"><mark>90%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/c.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/c.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">C</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 50%;"><mark>50%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/pascal.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/pascal.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">Pascal</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 70%;"><mark>70%</mark></div>
                            </div>
                         </data>
                      </li>
-                     <li>
-                        <img src="./image/skill/vhdl.png" height="45">
+                     <li class="skill-item">
+                        <img src="./image/skill/vhdl.png" height="45" class="skill-icon">
                         <data>
                            <p class="skill-name">VHDL</p>
-                           <div style="background-color: #343434;">
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 50%;"><mark>50%</mark></div>
                            </div>
                         </data>
@@ -269,6 +269,11 @@
          <article>
             <ul class="project">
                <li>
+                  <a class="view-project" onclick="project_transition(1,2,'number_recognition')">View</a>
+                  <img src="./image/project/number_recognition.jpg" height="100">
+                  <p>Number Recognition (2024)</p>
+               </li>
+               <li>
                   <a class="view-project" onclick="project_transition(1,0,'tetris')">View</a>
                   <img src="./image/project/tetris.jpg" height="100">
                   <p>Tetris (2024)</p>
@@ -277,11 +282,6 @@
                   <a class="view-project" onclick="project_transition(1,1,'animaldoku')">View</a>
                   <img src="./image/project/animaldoku.jpg" height="100">
                   <p>Animaldoku (2024)</p>
-               </li>
-               <li>
-                  <a class="view-project" onclick="project_transition(1,2,'snake')">View</a>
-                  <img src="./image/project/snake.jpg" height="100">
-                  <p>Snake (2023)</p>
                </li>
             </ul>
             <div class="show-more-2">
