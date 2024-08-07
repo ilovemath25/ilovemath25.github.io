@@ -25,7 +25,7 @@ function show_more(){
 function show_more_2(){
    data = [
       ['Snake (2023)','snake'],
-      ['XOXO (2023)','xoxo'],
+      ['XOXO (2022)','xoxo'],
    ]
    var project = document.querySelectorAll(".project")[1];
    document.querySelector(".show-more-2").style.display = "none";
