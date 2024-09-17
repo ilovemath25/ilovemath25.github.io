@@ -26,7 +26,3 @@ function home_transition(menu,index,link){
    if (!link==""){localStorage.setItem("link",link);}
    else{localStorage.clear();}
 }
-var perfEntries = performance.getEntriesByType("navigation");
-if (perfEntries[0].type === "back_forward") {
-   location.reload();
-}
