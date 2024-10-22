@@ -55,13 +55,13 @@
    background-color: #b22828;
    transition: all 0s;
 }
-.show-more,.show-more-2{
+.show-more-1,.show-more-2{
    display: flex;
    justify-content: center;
    align-items: center;
    margin-bottom: 30px;
 }
-.show-more div,.show-more-2 div{
+.show-more-1 div,.show-more-2 div{
    text-align: center;
    padding: 10px 5%;
    border-radius: 20px;
@@ -70,9 +70,9 @@
    cursor: pointer;
    transition: background-color 0.3s ease;
 }
-.show-more div:hover{background-color: #3f3f3f;}
+.show-more-1 div:hover{background-color: #3f3f3f;}
 .show-more-2 div:hover{background-color: #3f3f3f;}
-.show-more hr,.show-more-2 hr{
+.show-more-1 hr,.show-more-2 hr{
    border-color: #3f3f3f;
    width: 35%;
 }

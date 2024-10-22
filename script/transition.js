@@ -1,13 +1,14 @@
 function project_transition(idx,index,link){
    const html = document.querySelector('html');
    const project = document.querySelectorAll(".project")[idx].querySelectorAll('.project li')[index];
-   html.style.overflow = 'hidden';
+   // html.style.overflow = 'hidden';
    project.style.opacity = '1';
    project.style.zIndex = '200'
    project.style.cursor = "default";
    project.style.animation = "project_trans 1s";
    project.innerHTML = "";
    window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
+
 }
 function home_transition(menu,index,link){
    const html = document.querySelector('html');
