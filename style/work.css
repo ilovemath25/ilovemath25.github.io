@@ -30,14 +30,28 @@
    border: 1px solid #de4040;
    border-radius: 15px;
 }
-.overview-mobile{width: 20%;}
-.overview-pc{width: 70%;}
+.overview-mobile{
+   max-width: 20%;
+}
+.overview-pc{
+   max-width: 60%;
+}
 .back-button{
    display: flex;
    background-color: #4a4a4a;
    border-radius: 20px;
    padding: 20px;
    justify-content: center;
+   color: white;
+   cursor: pointer;
+}
+.download-button{
+   display: flex;
+   background-color: #4a4a4a;
+   border-radius: 20px;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
    color: white;
    cursor: pointer;
 }
@@ -50,13 +64,27 @@
    margin: auto;
    width: 30%;
 }
-.back-button:hover{
+.back-button:hover, .download-button:hover{
    background-color: #de4040;
    transition: all 0.5s;
 }
-.back-button:active{
+.back-button:active, .download-button:active{
    transition: all 0s;
    background-color: #b22828;
+}
+.download-icon{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   align-items: center;
+   justify-content: center;
+}
+.download-icon .fa-minus{
+   margin-top: -5px;
+   margin-bottom: -5px;
+}
+.download-icon .fa-arrow-down{
+   height: 15px;
 }
 @media screen and (min-width:900px){
    .title-and-description{height: auto;}

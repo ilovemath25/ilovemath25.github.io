@@ -22,14 +22,15 @@ function show_more(sectionIndex, data, buttonClass){
 }
 function show_more_1(){
    data = [
-      ['Movie Recommender (2023)','movie_recommender'],
+      ['Hotel Booking (2023)', 'hotel_booking'],
+      ['Movie Recommender (2023)', 'movie_recommender'],
    ]
    show_more(0, data, ".show-more-1");
 }
 function show_more_2(){
    data = [
-      ['Snake (2023)','snake'],
-      ['XOXO (2022)','xoxo'],
+      ['Snake (2023)', 'snake'],
+      ['XOXO (2022)', 'xoxo'],
    ]
    show_more(1, data, ".show-more-2");
 }

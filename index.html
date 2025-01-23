@@ -88,7 +88,7 @@
                <a href="#contact" class="nav-button" onclick="undisplay_left_menu()">
                   <i class="fa fa-user-circle nav-icon"></i><p class="nav-detail">Contact</p>
                </a>
-            </ul>
+            </div>
          </nav>
          <script src="./script/header.js"></script>
       </header>
@@ -155,7 +155,7 @@
                         <data>
                            <p class="skill-name">Javascript</p>
                            <div style="background-color: #343434;" class="skill-bar-background">
-                              <div class="skill-bar" style="max-width: 60%;"><mark>60%</mark></div>
+                              <div class="skill-bar" style="max-width: 70%;"><mark>70%</mark></div>
                            </div>
                         </data>
                      </li>
@@ -173,7 +173,25 @@
                         <data>
                            <p class="skill-name">C</p>
                            <div style="background-color: #343434;" class="skill-bar-background">
+                              <div class="skill-bar" style="max-width: 60%;"><mark>60%</mark></div>
+                           </div>
+                        </data>
+                     </li>
+                     <li class="skill-item">
+                        <img src="./image/skill/cpp.png" height="45" class="skill-icon">
+                        <data>
+                           <p class="skill-name">C++</p>
+                           <div style="background-color: #343434;" class="skill-bar-background">
                               <div class="skill-bar" style="max-width: 50%;"><mark>50%</mark></div>
+                           </div>
+                        </data>
+                     </li>
+                     <li class="skill-item">
+                        <img src="./image/skill/sql.png" height="45" class="skill-icon">
+                        <data>
+                           <p class="skill-name">SQL</p>
+                           <div style="background-color: #343434;" class="skill-bar-background">
+                              <div class="skill-bar" style="max-width: 60%;"><mark>60%</mark></div>
                            </div>
                         </data>
                      </li>
@@ -225,10 +243,16 @@
                         </div>
                         <div class="tool">
                            <div class="tool-item">
+                              <img src="./image/skill/pgadmin.png" height="45" class="tool-image">
+                              <p class="tool-name">pg Admin</p>
+                           </div>
+                        </div>
+                        <div class="tool">
+                           <div class="tool-item">
                               <img src="./image/skill/quartus.png" height="45" class="tool-image">
                               <p class="tool-name">Quartus Prime</p>
                            </div>
-                        </div>                        
+                        </div>
                      </li>
                   </ul>
                </div>
@@ -242,19 +266,19 @@
          <article>
             <ul class="project">
                <li>
-                  <a class="view-project" onclick="project_transition(0,0,'testcase')">View</a>
+                  <a class="view-project" onclick="project_transition(0,0,'ebookstore')">View</a>
+                  <img src="./image/project/ebookstore.jpg" height="100">
+                  <p>E-Bookstore (2025)</p>
+               </li>
+               <li>
+                  <a class="view-project" onclick="project_transition(0,1,'testcase')">View</a>
                   <img src="./image/project/testcase.jpg" height="100">
                   <p>Test Case (2024)</p>
                </li>
                <li>
-                  <a class="view-project" onclick="project_transition(0,1,'portfolio')">View</a>
+                  <a class="view-project" onclick="project_transition(0,2,'portfolio')">View</a>
                   <img src="./image/project/portfolio.jpg" height="100">
                   <p>Portfolio (2024)</p>
-               </li>
-               <li>
-                  <a class="view-project" onclick="project_transition(0,2,'hotel_booking')">View</a>
-                  <img src="./image/project/hotel_booking.jpg" height="100">
-                  <p>Hotel Booking (2023)</p>
                </li>
             </ul>
             <div class="show-more-1">

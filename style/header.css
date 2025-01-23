@@ -49,7 +49,10 @@ body{
    transition: background-color 0.3s ease;
 }
 .nav-icon-left,.nav-detail-left{padding: 5px;}
-.nav-button{cursor: pointer;}
+.nav-button{
+   cursor: pointer;
+   border-radius: 10px;
+}
 .title-and-line{
    color: white;
    display: flex;
@@ -73,6 +76,12 @@ body{
    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{background: #6b6b6b;}
+.nav-button:hover,.nav-button-left:hover{
+   background-color: #de4040;
+}
+.nav-button:active,.nav-button-left:active{
+   background-color: #b22828;
+}
 @media screen and (min-width:900px) { /* pc */
    .title-line{width: 40%;}
    .logo{
@@ -136,12 +145,6 @@ body{
    }
    .nav-icon{margin-right: 5px;}
    .left-menu-nav{width: 300px;}
-   .nav-button:hover,.nav-button-left:hover{
-      background-color: #de4040;
-   }
-   .nav-button:active,.nav-button-left:active{
-      background-color: #b22828;
-   }
 }
 @media screen and (max-width:900px){ /* mobile */
    .title-line{width: 33%;}
@@ -160,6 +163,9 @@ body{
    }
    .logo-button img{
       height: 20px;
+   }
+   .nav-button{
+      border-radius: 0px;
    }
    .normal .nav-button{
       display: none;
@@ -197,12 +203,6 @@ body{
    .nav-icon{
       margin: auto;
       padding: 2px;
-   }
-   .nav-button:hover,.nav-button-left:hover{
-      background-color: #de4040;
-   }
-   .nav-button:active,.nav-button-left:active{
-      background-color: #b22828;
    }
 }
 .hidden {

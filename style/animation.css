@@ -30,7 +30,7 @@
 }
 @keyframes showmenu{
    from {
-      transform: translateX(-40vh);
+      transform: translateX(-140%);
       border-radius: 60%;
    } 
    to {
@@ -44,7 +44,7 @@
       border-radius: 0;
    } 
    to {
-      transform: translateX(-40vh);
+      transform: translateX(-140%);
       border-radius: 60%;
    }
 }
