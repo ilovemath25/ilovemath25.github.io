@@ -1,4 +1,2 @@
-document.addEventListener("DOMContentLoaded", ()=>{
-   loadHTML('../template/project_header.html', 'header');
-   loadHTML('../template/footer.html', 'footer');
-});
+loadHTML('header', 'projectHeaderHTML', '../');
+loadHTML('footer', 'footerHTML', '../');
