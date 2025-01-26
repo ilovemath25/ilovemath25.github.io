@@ -1,4 +1,6 @@
-footer{position: relative;}
+footer{
+   position: relative;
+}
 .footer-line{
    margin-top: 30px;
    background-image: linear-gradient(to right,#00000000,#de4040,#00000000);
@@ -35,7 +37,9 @@ footer p{
    -webkit-user-select: none;
    -ms-user-select: none;
 }
-.sosmed i:hover{color: #de6e6e;}
+.sosmed i:hover{
+   color: #de6e6e;
+}
 @media screen and (min-width:900px){
    .signature{
       width: 120px;
