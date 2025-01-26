@@ -30,30 +30,10 @@ const staggeredAnimation = (elements) => {
    });
 };
 
-// Circle menu
-const circleAnimation = (isIntersecting, target) => {
-   const circleMenu = document.querySelector('.circle-menu');
-   if (isIntersecting) {
-      circleMenu.style.display = 'none';
-      circleMenu.style.animation = 'showcircle 0.5s forwards';
-   }
-   else if (window.innerWidth >= 900) {
-      circleMenu.style.display = 'block';
-      circleMenu.style.animation = 'hidecircle 0.5s forwards';
-   }
-   else {
-      circleMenu.style.display = 'none';
-   }
-};
-
 const showElementObserver = createObserver((target) => target.classList.add('show'));
 const showSkillObserver = createObserver(skillAnimation, { threshold: 0.3 });
 const showToolObserver = createObserver((target) => staggeredAnimation(target.querySelectorAll('.tool')), { threshold: 0.8 });
 const showProjectObserver = createObserver((target) => staggeredAnimation(target.querySelectorAll('li')), { threshold: 0.3 });
-const showCircleObserver = createObserver(
-   (target) => circleAnimation(true, target),
-   { threshold: 1, rootMargin: '100px' }
-);
 
 window.addEventListener('load', () => {
    const hiddenElements = document.querySelectorAll('.hidden');
@@ -66,12 +46,4 @@ window.addEventListener('load', () => {
 
    const hiddenProjects = document.querySelectorAll('.project');
    hiddenProjects.forEach((project) => showProjectObserver.observe(project));
-
-   const hiddenCircle = document.querySelector('.normal');
-   showCircleObserver.observe(hiddenCircle);
-
-   window.addEventListener('resize', () => {
-      showCircleObserver.unobserve(hiddenCircle);
-      showCircleObserver.observe(hiddenCircle);
-   });
 });
