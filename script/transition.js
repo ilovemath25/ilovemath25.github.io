@@ -1,29 +1,25 @@
 function project_transition(idx,index,link){
-   const html = document.querySelector('html');
    const project = document.querySelectorAll(".project")[idx].querySelectorAll('.project li')[index];
-   // html.style.overflow = 'hidden';
+   const width = project.offsetWidth;
+   const height = project.offsetHeight;
+   project.style.width = `${width}px`;
+   project.style.height = `${height}px`;
    project.style.opacity = '1';
-   project.style.zIndex = '200'
+   project.style.zIndex = "200"
    project.style.cursor = "default";
-   project.style.animation = "project_trans 1s";
    project.innerHTML = "";
-   window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},600);
-
+   project.style.animation = "project_trans 2s";
+   window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},700);
 }
-function home_transition(menu,index,link){
-   const html = document.querySelector('html');
-   if(menu==1){var nav = document.querySelectorAll('.nav-button')[index-1];}
-   else if(menu==2){var nav = document.querySelectorAll('.nav-button-left')[index-1];}
-   else if(menu==3){var nav = document.querySelectorAll('.circle-menu .nav-button')[index-1];}
-   else if(menu==4){var nav = document.querySelectorAll('.mobile .nav-button')[index-1];}
-   else if(menu==5){var nav = document.querySelectorAll('.back-button')[index-1];}
-   console.log(nav);
-   html.style.overflow = 'hidden';
-   nav.style.zIndex = '200';
-   nav.style.animation = "project_trans 1s";
-   nav.style.cursor = "default";
-   nav.innerHTML = "";
-   window.setTimeout(function(){window.location.href = "../index.html";},300);
+function home_transition(link){
+   const animation = document.querySelector(".show-up-animation");
+   animation.style.borderRadius = "0";
+   project.style.zIndex = '200';
+   animation.style.animation = "none";
+   animation.style.position = "fixed"
+   animation.style.transform = "translateY(-800px)";
+   animation.style.animation = "project_trans 3s";
+   window.setTimeout(function(){window.location.href = "../index.html";},700);
    if (!link==""){localStorage.setItem("link",link);}
    else{localStorage.clear();}
 }

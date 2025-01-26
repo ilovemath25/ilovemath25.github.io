@@ -66,7 +66,5 @@ function show_more_3(){
    show_more(2, data, ".show-more-3");
 }
 
-document.addEventListener("DOMContentLoaded", ()=>{
-   loadHTML('./template/header.html', 'header');
-   loadHTML('./template/footer.html', 'footer');
-});
+loadHTML('./template/header.html', 'header');
+loadHTML('./template/footer.html', 'footer');

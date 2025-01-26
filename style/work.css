@@ -22,7 +22,9 @@
    display: flex;
    margin: 40px 10%;
 }
-.pc-only{margin: 40px 0px;}
+.pc-only{
+   margin: 40px 0px;
+}
 .overview{
    display: flex;
    margin: auto;
@@ -43,6 +45,7 @@
    justify-content: center;
    color: white;
    cursor: pointer;
+   position: relative;
 }
 .download-button{
    display: flex;

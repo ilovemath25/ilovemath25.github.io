@@ -48,25 +48,11 @@
       border-radius: 60%;
    }
 }
-@keyframes showcircle {
-   from {
-      transform: translateY(0px);
-   } 
-   to {
-      transform: translateY(-120px);
-   }
-}
-@keyframes hidecircle {
-   from {
-      transform: translateY(-120px);
-   } 
-   to {
-      transform: translateY(0px);
-   }
-}
 @keyframes project_trans {
+   from{
+      background-color: #282828;
+   }
    to{
-      padding: 1000px;
       transform: scale(10);
       background-color: #282828;
    }
