@@ -135,6 +135,7 @@ var footerHTML = `
       </div>
       <p class="hidden">Made by Me</p>
       <p class="hidden">Wesley</p>
+      <p>&copy; 2024 Ilovemath</p>
    </section>
    <img src="./image/signature.png" class="signature">
 </footer>
