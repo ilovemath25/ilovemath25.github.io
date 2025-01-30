@@ -25,7 +25,6 @@
    margin: 5px 1%;
    border-radius: 5px;
    border: 1px #de4040 solid;
-   height: auto;
    transition: background-color 0.3s ease;
 }
 .view-project{

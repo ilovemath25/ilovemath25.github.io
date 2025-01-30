@@ -36,7 +36,6 @@ function show_more(sectionIndex, data, buttonClass){
       a.setAttribute("onclick", "project_transition("+sectionIndex+","+(i+3)+",'"+data[i][1]+"')");
       a.textContent = "View";
       img.src = "./image/project/" + data[i][1] + ".jpg";
-      img.height = "100";
       p.textContent = data[i][0];
       li.appendChild(a);
       li.appendChild(img);
@@ -55,6 +54,7 @@ function show_more_1(){
 
 function show_more_2(){
    data = [
+      ['Animaldoku (2024)', 'animaldoku'],
       ['Snake (2023)', 'snake'],
       ['XOXO (2022)', 'xoxo'],
    ]
