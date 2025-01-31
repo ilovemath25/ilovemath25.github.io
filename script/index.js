@@ -45,3 +45,7 @@ function show_more_3(){
 
 loadHTML('header', 'headerHTML', './');
 loadHTML('footer', 'footerHTML', './');
+
+window.addEventListener("load", function() {
+   document.querySelector("body").style.display = "block";
+});
