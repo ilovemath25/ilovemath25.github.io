@@ -6,10 +6,10 @@ var headerHTML = `
       <div class="left-menu-nav">
          <img src="./image/logo.png" height="30">
          <hr style="margin: 15px;">
-         <a href="" class="nav-button-left" onclick="undisplay_left_menu()">
+         <a class="nav-button-left" onclick="home_transition('index.html')">
             <i class="fa fa-home nav-icon-left"></i><p class="nav-detail-left">Home</p>
          </a>
-         <a href="#about-me" class="nav-button-left" onclick="undisplay_left_menu()">
+         <a class="nav-button-left" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon-left"></i><p class="nav-detail-left">About</p>
          </a>
          <a href="#project" class="nav-button-left" onclick="undisplay_left_menu()">
@@ -27,10 +27,10 @@ var headerHTML = `
          <i class="fa-solid fa-bars logo-button" onclick="display_left_menu()"></i>
       </label>
       <div class="nav-bar">
-         <a href="" class="nav-button" style="animation-delay: 0.1s;">
+         <a class="nav-button" style="animation-delay: 0.1s;" onclick="home_transition('index.html')">
             <i class="fa fa-home nav-icon"></i><p class="nav-detail">Home</p>
          </a>
-         <a href="#about-me" class="nav-button" style="animation-delay: 0.6s;">
+         <a class="nav-button" style="animation-delay: 0.6s;" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon"></i><p class="nav-detail">About</p>
          </a>
          <a href="#project" class="nav-button" style="animation-delay: 1.1s;">
@@ -43,10 +43,10 @@ var headerHTML = `
    </nav>
    <nav class="mobile">
       <div class="nav-bar">
-         <a href="" class="nav-button" onclick="undisplay_left_menu()">
+         <a class="nav-button" onclick="home_transition('index.html')">
             <i class="fa fa-home nav-icon"></i><p class="nav-detail">Home</p>
          </a>
-         <a href="#about-me" class="nav-button" onclick="undisplay_left_menu()">
+         <a class="nav-button" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon"></i><p class="nav-detail">About</p>
          </a>
          <a href="#project" class="nav-button" onclick="undisplay_left_menu()">
@@ -68,10 +68,10 @@ var projectHeaderHTML = `
       <div class="left-menu-nav">
          <img src="../image/logo.png" height="30">
          <hr style="margin: 15px;">
-         <a class="nav-button-left" onclick="home_transition('')">
+         <a class="nav-button-left" onclick="home_transition('../index.html')">
             <i class="fa fa-home nav-icon-left"></i><p class="nav-detail-left">Home</p>
          </a>
-         <a class="nav-button-left" onclick="home_transition('#about-me')">
+         <a class="nav-button-left" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon-left"></i><p class="nav-detail-left">About</p>
          </a>
          <a class="nav-button-left" onclick="home_transition('#project')">
@@ -89,10 +89,10 @@ var projectHeaderHTML = `
          <i class="fa-solid fa-bars logo-button" onclick="display_left_menu()"></i>
       </label>
       <div class="nav-bar">
-         <a class="nav-button" onclick="home_transition('')" style="animation-delay: 0.1s;">
+         <a class="nav-button" style="animation-delay: 0.1s;" onclick="home_transition('../index.html')">
             <i class="fa fa-home nav-icon"></i><p class="nav-detail">Home</p>
          </a>
-         <a class="nav-button" onclick="home_transition('#about-me')" style="animation-delay: 0.6s;">
+         <a class="nav-button" style="animation-delay: 0.6s;" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon"></i><p class="nav-detail">About</p>
          </a>
          <a class="nav-button" onclick="home_transition('#project')" style="animation-delay: 1.1s;">
@@ -105,10 +105,10 @@ var projectHeaderHTML = `
    </nav>
    <nav class="mobile">
       <div class="nav-bar">
-         <a class="nav-button" onclick="home_transition('')">
+         <a class="nav-button" onclick="home_transition('../index.html')">
             <i class="fa fa-home nav-icon"></i><p class="nav-detail">Home</p>
          </a>
-         <a class="nav-button" onclick="home_transition('#about-me')">
+         <a class="nav-button" onclick="home_transition('content/about.html')">
             <i class="fa fa-user nav-icon"></i><p class="nav-detail">About</p>
          </a>
          <a class="nav-button" onclick="home_transition('#project')">

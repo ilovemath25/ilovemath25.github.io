@@ -1,11 +1,16 @@
-.about-me,.skill,.devtool{
+.title{
+   font-weight: bold;
+   font-size: 40px;
+   margin-bottom: 10px;
+}
+.about-me, .skill, .devtool{
    color: white;
    background-color: #3f3f3f;
    margin: 30px;
    padding: 30px;
-   overflow: hidden;
    justify-content: space-around;
    flex-flow: wrap;
+   height: fit-content;
 }
 .about-me p{
    text-align: justify;
@@ -14,7 +19,7 @@
 .about-and-skill{
    overflow: hidden;
 }
-.skill .speak,.devtool .speak{
+.skill .speak, .devtool .speak{
    font-size: 16px;
    margin-bottom: 15px;
    font-weight: bold;
@@ -62,7 +67,9 @@
 .skill-item data:hover .skill-bar-background{
    box-shadow: 6px 6px 5px #242424;
 }
-.devtool li{flex-flow: wrap;}
+.devtool li{
+   flex-flow: wrap;
+}
 .tool{
    opacity: 0;
    position: relative;
@@ -98,12 +105,11 @@
       font-size: 18px;
       text-indent: 3em;
       border-radius: 20px;
-      max-height: 300px;
    }
    .skill-and-devtool{
       width: 60%;
    }
-   .skill,.devtool{
+   .skill, .devtool{
       margin-left: 5px;
       font-size: 15px;
       border-radius: 20px;
@@ -118,12 +124,15 @@
       display: block;
       margin: 20px;
    }
+   .title{
+      font-size: 30px;
+   }
    .about-me{
-      font-size: 16px;
+      font-size: 14px;
       text-indent: 2em;
       border-radius: 15px;
    }
-   .skill,.devtool{
+   .skill, .devtool{
       font-size: 13px;
       border-radius: 15px;
    }
@@ -131,20 +140,22 @@
       height: 45px;
       width: 50px;
    }
-   .skill-bar{height: 8px;}
+   .skill-bar{
+      height: 8px;
+   }
 }
 @media screen and (max-width:440px){ /* mobile 2*/
    .about-and-skill{
       display: block;
    }
    .about-me{
-      font-size: 14px;
+      font-size: 13px;
       text-indent: 2em;
       margin: 25px;
       padding: 20px;
       border-radius: 15px;
    }
-   .skill,.devtool{
+   .skill, .devtool{
       font-size: 12px;
       border-radius: 15px;
    }
@@ -162,8 +173,12 @@
       padding-right: 2px;
       top: -15px;
    }
-   .skill-bar{height: 7px;}
-   .devtool li{display: block;}
+   .skill-bar{
+      height: 7px;
+   }
+   .devtool li{
+      display: block;
+   }
    .tool{
       margin: 0;
       margin-bottom: 10px;

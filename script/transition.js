@@ -19,7 +19,5 @@ function home_transition(link){
    animation.style.position = "fixed"
    animation.style.transform = "translateY(-800px)";
    animation.style.animation = "project_trans 3s";
-   window.setTimeout(function(){window.location.href = "../index.html";},700);
-   if (!link==""){localStorage.setItem("link",link);}
-   else{localStorage.clear();}
+   window.setTimeout(function(){window.location.href = link;},700);
 }

@@ -39,9 +39,14 @@ window.addEventListener('load', () => {
    const hiddenElements = document.querySelectorAll('.hidden');
    hiddenElements.forEach((el) => showElementObserver.observe(el));
 
-   if (!window.location.href.includes('project')) {
-      showSkillObserver.observe(document.querySelector('.skill'));
-      showToolObserver.observe(document.querySelector('.devtool'));
+   const skillElement = document.querySelector('.skill');
+   if (skillElement) {
+      showSkillObserver.observe(skillElement);
+   }
+
+   const toolElement = document.querySelector('.devtool');
+   if (toolElement) {
+      showToolObserver.observe(toolElement);
    }
 
    const hiddenProjects = document.querySelectorAll('.project');
