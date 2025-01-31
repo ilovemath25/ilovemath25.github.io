@@ -14,7 +14,7 @@ function project_transition(idx,index,link){
 function home_transition(link){
    const animation = document.querySelector(".show-up-animation");
    animation.style.borderRadius = "0";
-   project.style.zIndex = '200';
+   animation.style.zIndex = '200';
    animation.style.animation = "none";
    animation.style.position = "fixed"
    animation.style.transform = "translateY(-800px)";
