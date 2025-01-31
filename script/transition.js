@@ -9,7 +9,7 @@ function project_transition(idx,index,link){
    project.style.cursor = "default";
    project.innerHTML = "";
    project.style.animation = "project_trans 2s";
-   window.setTimeout(function(){window.location.href = 'project/'+link+'.html';},700);
+   window.setTimeout(function(){window.location.href = '../project/'+link+'.html';},700);
 }
 function home_transition(link){
    const animation = document.querySelector(".show-up-animation");

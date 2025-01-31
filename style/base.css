@@ -17,4 +17,5 @@ body{
    display: none;
    background-image: linear-gradient(black,black,#00001e,black);
    background-color: #000;
+   color: white;
 }
