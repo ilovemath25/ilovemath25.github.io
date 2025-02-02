@@ -11,7 +11,7 @@ function project_transition(idx,index,link){
    project.innerHTML = "";
    project.style.animation = "project_trans 2s";
    window.setTimeout(function(){window.location.href = '../project/'+link+'.html';}, 700);
-   window.setTimeout(function(){project.innerHTML = temp;}, 800);
+   window.setTimeout(function(){project.innerHTML = temp;}, 1000);
 }
 function home_transition(link){
    const animation = document.querySelector(".show-up-animation");
