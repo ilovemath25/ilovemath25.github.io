@@ -34,6 +34,7 @@ const showElementObserver = createObserver((target) => target.classList.add('sho
 const showSkillObserver = createObserver(skillAnimation, { threshold: 0.3 });
 const showToolObserver = createObserver((target) => staggeredAnimation(target.querySelectorAll('.tool')), { threshold: 0.8 });
 const showProjectObserver = createObserver((target) => staggeredAnimation(target.querySelectorAll('li')), { threshold: 0.3 });
+const showSosmedObserver = createObserver((target) => staggeredAnimation(target.querySelectorAll('.sosmed-container')), { threshold: 0.3 });
 
 window.addEventListener('load', () => {
    const hiddenElements = document.querySelectorAll('.hidden');
@@ -49,6 +50,10 @@ window.addEventListener('load', () => {
       showToolObserver.observe(toolElement);
    }
 
+   const sosmedElement = document.querySelector('.social-media');
+   if (sosmedElement) {
+      showSosmedObserver.observe(sosmedElement);
+   }
    const hiddenProjects = document.querySelectorAll('.project');
    hiddenProjects.forEach((project) => showProjectObserver.observe(project));
 });

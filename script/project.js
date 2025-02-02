@@ -19,9 +19,6 @@ function show_more(sectionIndex, data){
 }
 
 var htmlData = [], pygameData = [], otherData = [];
-loadHTML('header', 'subpageHeaderHTML', '../');
-loadHTML('footer', 'footerHTML', '../');
-
 document.addEventListener("DOMContentLoaded", function() {
    var htmlProject = document.querySelector(".html-project");
    var pygameProject = document.querySelector(".pygame-project");
@@ -65,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 });
 
+loadHTML('header', 'subpageHeaderHTML', '../');
+loadHTML('footer', 'footerHTML', '../');
 window.addEventListener("load", function() {
    document.querySelector("body").style.display = "block";
 });
