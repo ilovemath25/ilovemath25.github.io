@@ -57,7 +57,9 @@
    white-space: nowrap;
    animation: typing 1.5s steps(40) forwards;
 }
-.text4{border-right: 1px solid #de4040;}
+.text4{
+   border-right: 1px solid #de4040;
+}
 .fa-hand{
    color: #fff765;
    position: absolute;
@@ -66,6 +68,26 @@
    transform: scale(0) rotate(40deg);
    animation: wavinghand 2.5s infinite;
    transform-origin: 70% 70%;
+}
+.button{
+   display: flex;
+   background-color: #4a4a4a;
+   border-radius: 20px;
+   padding: 15px;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   cursor: pointer;
+   width: 30%;
+   margin: auto;
+}
+.button:hover{
+   background-color: #de4040;
+   transition: all 0.5s;
+}
+.button:active{
+   transition: all 0s;
+   background-color: #b22828;
 }
 @media screen and (min-width:900px) { /* pc */
    .intro-content{
@@ -87,10 +109,18 @@
       height: 255px;
       margin-left: 50px;
    }
-   .profile{inset: 17px;}
-   .text1{font-size: 30px;}
-   .text3{font-size: 40px;}
-   .bg{right: 0;}
+   .profile{
+      inset: 17px;
+   }
+   .text1{
+      font-size: 30px;
+   }
+   .text3{
+      font-size: 40px;
+   }
+   .bg{
+      right: 0;
+   }
 }
 @media screen and (max-width:900px) { /* mobile1 */
    .profile-border{
@@ -106,10 +136,21 @@
    .text1{
       font-size: 25px;
    }
-   .text2{font-size: 12px;}
-   .text3{font-size: 30px;}
-   .text4{font-size: 14px;}
-   .text5{font-size: 12px;}
+   .text2{
+      font-size: 12px;
+   }
+   .text3{
+      font-size: 30px;
+   }
+   .text4{
+      font-size: 14px;
+   }
+   .text5{
+      font-size: 12px;
+   }
+   .button{
+      width: 40%;
+   }
 }
 @media screen and (max-width:400px) { /* mobile2 */
    .profile-border{
@@ -122,8 +163,16 @@
    .intro{
       height: 600px;
    }
-   .text1{font-size: 25px;}
-   .text2{font-size: 12px;}
-   .text3{font-size: 30px;}
-   .intro-content section{margin: 35px;}
+   .text1{
+      font-size: 25px;
+   }
+   .text2{
+      font-size: 12px;
+   }
+   .text3{
+      font-size: 30px;
+   }
+   .intro-content section{
+      margin: 35px;
+   }
 }

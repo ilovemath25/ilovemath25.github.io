@@ -1,7 +1,7 @@
 function loadHTML(elementId, htmlFile, basePath) {
    const templates = {
       "headerHTML": "/template/header.html",
-      "projectHeaderHTML": "/template/project_header.html",
+      "subpageHeaderHTML": "/template/subpage_header.html",
       "footerHTML": "/template/footer.html"
    };
    fetch(templates[htmlFile] || htmlFile)

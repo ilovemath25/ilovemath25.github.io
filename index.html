@@ -12,7 +12,6 @@
    <link rel="stylesheet" href="./style/animation.css">
    <link rel="stylesheet" href="./style/base.css">
    <link rel="stylesheet" href="./style/intro.css">
-   <link rel="stylesheet" href="./style/about.css">
    <link rel="stylesheet" href="./style/project.css">
 </head>
 <body>
@@ -40,35 +39,19 @@
          </div>
          <label class="title-and-line" id="project">
             <div class="title-line" style="background-image: linear-gradient(to right,#00000000,#de4040);"></div>
-            <div class="title-title">HTML Project</div>
+            <div class="title-title">Recent Project</div>
             <div class="title-line" style="background-image: linear-gradient(to right,#de4040,#00000000);"></div>
          </label>
          <article>
             <ul class="project">
-               <li>
-                  <a class="view-project" onclick="project_transition(0,0,'ebookstore')">View</a>
-                  <img src="./image/project/ebookstore.jpg">
-                  <p>E-Bookstore (2025)</p>
-               </li>
-               <li>
-                  <a class="view-project" onclick="project_transition(0,1,'testcase')">View</a>
-                  <img src="./image/project/testcase.jpg">
-                  <p>Test Case (2024)</p>
-               </li>
-               <li>
-                  <a class="view-project" onclick="project_transition(0,2,'portfolio')">View</a>
-                  <img src="./image/project/portfolio.jpg">
-                  <p>Portfolio (2024)</p>
-               </li>
             </ul>
-            <div class="show-more-1">
-               <hr><div onclick="show_more_1()">Show More</div><hr>
-            </div>
+            <div onclick="home_transition('./content/project.html')" class="button">More Projects</div>
          </article>
       </main>
       <footer id="footer"></footer>
    </div>
    <script src="./script/include.js"></script>
+   <script src="./script/project_dataset.js"></script>
    <script src="./script/scroll.js"></script>
    <script src="./script/transition.js"></script>
    <script src="./script/index.js"></script>
