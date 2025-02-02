@@ -7,9 +7,11 @@ function project_transition(idx,index,link){
    project.style.opacity = '1';
    project.style.zIndex = "200"
    project.style.cursor = "default";
+   var temp = project.innerHTML;
    project.innerHTML = "";
    project.style.animation = "project_trans 2s";
-   window.setTimeout(function(){window.location.href = '../project/'+link+'.html';},700);
+   window.setTimeout(function(){window.location.href = '../project/'+link+'.html';}, 700);
+   window.setTimeout(function(){project.innerHTML = temp;}, 800);
 }
 function home_transition(link){
    const animation = document.querySelector(".show-up-animation");
