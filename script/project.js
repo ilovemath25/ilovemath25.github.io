@@ -7,7 +7,7 @@ function show_more(sectionIndex, data){
       var p = document.createElement("p");
       li.style = "animation: 1s ease " + (0.2 * i) + "s 1 normal forwards running fade;";
       a.className = "view-project";
-      a.setAttribute("onclick", "project_transition("+sectionIndex+","+(i+3)+",'"+data[i][1]+"')");
+      a.setAttribute("onclick", "project_transition("+sectionIndex+","+(i)+",'"+data[i][1]+"')");
       a.textContent = "View";
       img.src = "../image/project/" + data[i][1] + ".jpg";
       p.textContent = data[i][0];
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
          var p = document.createElement("p");
          li.style = "animation: 1s ease " + (0.2 * i) + "s 1 normal forwards running fade;";
          a.className = "view-project";
-         a.setAttribute("onclick", "project_transition("+index+","+(i+3)+",'"+project[1]+"')");
+         a.setAttribute("onclick", "project_transition("+index+","+(i)+",'"+project[1]+"')");
          a.textContent = "View";
          img.src = "../image/project/" + project[1] + ".jpg";
          p.textContent = project[0];
