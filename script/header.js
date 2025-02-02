@@ -15,3 +15,6 @@ function display_left_menu(){
    })
    document.querySelector("*").style.overflow = "hidden";
 }
+window.addEventListener('pageshow', function(event) {
+   if (event.persisted) window.location.reload();
+});
