@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+          for file in $(find . -name "*.html" | sed 's|./||'); do
+            lastmod=$(date +%Y-%m-%d)
+            url="https://yourgithubpage.github.io/${file}"
+            echo "<url><loc>${url}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>" >> sitemap.xml
+          done
+          echo "</urlset>" >> sitemap.xml
+
+      - run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add sitemap.xml
+          git commit -m "Generate sitemap.xml"
+          git push
