@@ -17,4 +17,5 @@ const pygameProjects = [
 
 const otherProjects = [
    ['Donut (2024)', 'donut'],
+   ['SHA-256 (2024)', 'sha256'],
 ];
