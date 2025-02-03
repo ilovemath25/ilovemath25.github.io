@@ -21,7 +21,18 @@ jobs:
           for file in $(find . -name "*.html" | sed 's|./||'); do
             lastmod=$(date +%Y-%m-%d)
             url="https://ilovemath25.github.io/${file}"
-            echo "<url><loc>${url}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>" >> sitemap.xml
+
+            changefreq=$(grep -oP '(?<=<meta name="changefreq" content=").*?(?=">)' "$file" || echo "weekly")
+            priority=$(grep -oP '(?<=<meta name="priority" content=").*?(?=">)' "$file" || echo "0.8")
+
+            echo "
+            <url>
+              <loc>${url}</loc>
+              <lastmod>${lastmod}</lastmod>
+              <changefreq>${changefreq}</changefreq>
+              <priority>${priority}</priority>
+            </url>
+            " >> sitemap.xml
           done
           echo "</urlset>" >> sitemap.xml
 
