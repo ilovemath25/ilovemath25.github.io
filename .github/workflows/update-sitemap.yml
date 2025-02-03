@@ -21,8 +21,8 @@ jobs:
           echo "</urlset>" >> sitemap.xml
 
       - run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "ilovemath25"
+          git config --global user.email "w3573y.young@gmail.com"
           git add sitemap.xml
           git commit -m "Generate sitemap.xml"
           git push
