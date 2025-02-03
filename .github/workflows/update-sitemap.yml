@@ -19,20 +19,19 @@ jobs:
           echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
           for file in $(find . -name "*.html" | sed 's|./||'); do
+            if [[ "$file" == template/* ]]; then
+              continue
+            fi
             lastmod=$(date +%Y-%m-%d)
             url="https://ilovemath25.github.io/${file}"
-
             changefreq=$(grep -oP '(?<=<meta name="changefreq" content=").*?(?=">)' "$file" || echo "weekly")
             priority=$(grep -oP '(?<=<meta name="priority" content=").*?(?=">)' "$file" || echo "0.8")
-
-            echo "
-            <url>
+            echo "<url>
               <loc>${url}</loc>
               <lastmod>${lastmod}</lastmod>
               <changefreq>${changefreq}</changefreq>
               <priority>${priority}</priority>
-            </url>
-            " >> sitemap.xml
+            </url>" >> sitemap.xml
           done
           echo "</urlset>" >> sitemap.xml
 
