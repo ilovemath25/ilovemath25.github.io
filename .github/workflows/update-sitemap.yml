@@ -1,3 +1,4 @@
+name: Auto-update Sitemap
 on:
   push:
     branches:
