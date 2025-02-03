@@ -1,4 +1,5 @@
-name: Auto-update Sitemap
+name: Auto Update Sitemap
+
 on:
   push:
     branches:
@@ -8,21 +9,26 @@ jobs:
   update-sitemap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
-      - run: |
+      - name: Generate Sitemap
+        run: |
           echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
           for file in $(find . -name "*.html" | sed 's|./||'); do
             lastmod=$(date +%Y-%m-%d)
-            url="https://yourgithubpage.github.io/${file}"
+            url="https://ilovemath25.github.io/${file}"
             echo "<url><loc>${url}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>" >> sitemap.xml
           done
           echo "</urlset>" >> sitemap.xml
 
-      - run: |
-          git config --global user.name "ilovemath25"
-          git config --global user.email "w3573y.young@gmail.com"
+      - name: Commit and Push Sitemap
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
           git add sitemap.xml
-          git commit -m "Generate sitemap.xml"
-          git push
+          git commit -m "Auto-generated sitemap.xml"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/ilovemath25/ilovemath25.github.io.git main
