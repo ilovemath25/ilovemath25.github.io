@@ -10,6 +10,7 @@ function show_more(sectionIndex, data){
       a.setAttribute("onclick", "project_transition("+sectionIndex+","+(i+3)+",'"+data[i][1]+"')");
       a.textContent = "View";
       img.src = "../image/project/" + data[i][1] + ".jpg";
+      img.alt = data[i][0];
       p.textContent = data[i][0];
       li.appendChild(a);
       li.appendChild(img);
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
          a.setAttribute("onclick", "project_transition("+index+","+(i)+",'"+project[1]+"')");
          a.textContent = "View";
          img.src = "../image/project/" + project[1] + ".jpg";
+         img.alt = project[0];
          p.textContent = project[0];
          li.appendChild(a);
          li.appendChild(img);

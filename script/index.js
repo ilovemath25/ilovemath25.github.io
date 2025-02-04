@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       a.setAttribute('onclick', `project_transition(0,${index},'${project[1]}')`);
       const img = document.createElement('img');
       img.src = `./image/project/${project[1]}.jpg`;
+      img.alt = project[0];
       const p = document.createElement('p');
       p.textContent = project[0];
       li.appendChild(a);
