@@ -1,4 +1,5 @@
-function project_transition(idx,index,link){
+function project_transition(idx, index, link, event){
+   if (event) event.preventDefault();
    const project = document.querySelectorAll(".project")[idx].querySelectorAll('.project li')[index];
    const width = project.offsetWidth;
    const height = project.offsetHeight;

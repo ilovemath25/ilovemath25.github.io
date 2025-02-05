@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const a = document.createElement('a');
       a.className = 'view-project';
       a.textContent = 'View';
-      a.setAttribute('onclick', `project_transition(0,${index},'${project[1]}')`);
+      a.setAttribute('onclick', `project_transition(0,${index},'${project[1]}', event)`);
+      a.href = `./project/${project[1]}.html`;
       const img = document.createElement('img');
       img.src = `./image/project/${project[1]}.jpg`;
       img.alt = project[0];
