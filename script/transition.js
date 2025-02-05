@@ -11,7 +11,8 @@ function project_transition(idx,index,link){
    project.style.animation = "project_trans 2s";
    window.setTimeout(function(){window.location.href = '../project/'+link+'.html';}, 700);
 }
-function home_transition(link){
+function home_transition(link, event){
+   if (event) event.preventDefault();
    const animation = document.querySelector(".show-up-animation");
    animation.style.borderRadius = "0";
    animation.style.zIndex = '200';
