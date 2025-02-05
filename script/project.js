@@ -11,6 +11,7 @@ function show_more(sectionIndex, data){
       a.textContent = "View";
       img.src = "../image/project/" + data[i][1] + ".jpg";
       img.alt = data[i][0];
+      img.loading = "lazy";
       p.textContent = data[i][0];
       li.appendChild(a);
       li.appendChild(img);
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
          a.textContent = "View";
          img.src = "../image/project/" + project[1] + ".jpg";
          img.alt = project[0];
+         img.loading = "lazy";
          p.textContent = project[0];
          li.appendChild(a);
          li.appendChild(img);

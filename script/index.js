@@ -3,8 +3,6 @@ loadHTML('footer', 'footerHTML', './');
 
 document.addEventListener("DOMContentLoaded", function() {
    const recentProjects = [htmlProjects[htmlProjects.length - 1], pygameProjects[pygameProjects.length - 1], otherProjects[otherProjects.length - 1]];
-
-   console.log(recentProjects);
    const projectList = document.querySelector('.project');
    recentProjects.forEach((project, index) => {
       const li = document.createElement('li');
@@ -15,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const img = document.createElement('img');
       img.src = `./image/project/${project[1]}.jpg`;
       img.alt = project[0];
+      img.loading = "lazy";
       const p = document.createElement('p');
       p.textContent = project[0];
       li.appendChild(a);
