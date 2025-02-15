@@ -89,7 +89,9 @@
    height: 15px;
 }
 @media screen and (min-width:900px){
-   .title-and-description{height: auto;}
+   .title-and-description{
+      height: auto;
+   }
    .title{
       position: relative;
       left: 0;
@@ -109,7 +111,9 @@
    }
 }
 @media screen and (max-width:900px) {
-   .title-and-description{display: block;}
+   .title-and-description{
+      display: block;
+   }
    .title{
       font-size: 35px;
       width: 80%;
@@ -123,16 +127,22 @@
    }
 }
 @media screen and (max-width:500px) {
-   .title{font-size: 25px;}
-   .description{font-size: 12px;}
+   .title{
+      font-size: 25px;
+   }
+   .description{
+      font-size: 12px;
+   }
    .mobile-and-pc{
       display: block;
    }
    .overview-mobile{
-      width: 60%;
+      width: 50%;
       margin: 40px auto;
+      max-width: none;
    }
    .overview-pc{
-      width: 80%;
+      width: 90%;
+      max-width: none;
    }
 }
