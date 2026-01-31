@@ -3,120 +3,36 @@
 
   <url>
     <loc>https://ilovemath25.github.io/index.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/xoxo.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/testcase.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/animaldoku.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/ebookstore.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/gulu_gulu.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/snake.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/number_recognition.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/portfolio.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/hotel_booking.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/donut.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/tetris.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/sha256.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ilovemath25.github.io/project/movie_recommender.html</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://ilovemath25.github.io/content/projects.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://ilovemath25.github.io/content/about.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <loc>https://ilovemath25.github.io/content/contact.html</loc>
+    <lastmod>2026-01-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://ilovemath25.github.io/content/contact.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <loc>https://ilovemath25.github.io/content/about.html</loc>
+    <lastmod>2026-01-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ilovemath25.github.io/content/project.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
