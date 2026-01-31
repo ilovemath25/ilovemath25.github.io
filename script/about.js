@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const skillItem = document.createElement('li');
       skillItem.className = 'skill-item';
       skillItem.innerHTML = `
-         <img src="../image/skill/${skill.toLowerCase()}.png" height="45" class="skill-icon" alt="${skill}">
+         <img src="../media/skill/${skill.toLowerCase()}.png" height="45" class="skill-icon" alt="${skill}">
          <data>
             <p class="skill-name">${skill}</p>
             <div class="skill-bar-background" style="background-color: #343434;">
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       toolItem.innerHTML = `
          <div class="tool">
             <div class="tool-item">
-               <img src="../image/tool/${tool[1]}.png" height="45" class="tool-image" alt="${tool[0]}">
+               <img src="../media/tool/${tool[1]}.png" height="45" class="tool-image" alt="${tool[0]}">
                <p class="tool-name">${tool[0]}</p>
             </div>
          </div>`;

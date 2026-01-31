@@ -1,75 +1,71 @@
-function show_more(sectionIndex, data){
-   var project = document.querySelectorAll(".project")[sectionIndex];
-   for(var i = 0; i < data.length; i++) {
-      var li = document.createElement("li");
-      var a = document.createElement("a");
-      var img = document.createElement("img");
-      var p = document.createElement("p");
-      li.style = "animation: 1s ease " + (0.2 * i) + "s 1 normal forwards running fade;";
-      a.className = "view-project";
-      a.setAttribute("onclick", "project_transition("+sectionIndex+","+(i+3)+",'"+data[i][1]+"', event)");
-      a.href = "../project/" + data[i][1] + ".html";
-      a.textContent = "View";
-      img.src = "../image/project/" + data[i][1] + ".jpg";
-      img.alt = data[i][0];
-      img.loading = "lazy";
-      p.textContent = data[i][0];
-      li.appendChild(a);
-      li.appendChild(img);
-      li.appendChild(p);
-      project.appendChild(li);
-   }
-}
-
-var htmlData = [], pygameData = [], otherData = [];
-document.addEventListener("DOMContentLoaded", function() {
-   var htmlProject = document.querySelector(".html-project");
-   var pygameProject = document.querySelector(".pygame-project");
-   var otherProject = document.querySelector(".other-project");
-   [htmlProject, pygameProject, otherProject].forEach((container, index) => {
-      if (index == 0) var data = htmlProjects.reverse();
-      else if (index == 1) var data = pygameProjects.reverse();
-      else var data = otherProjects.reverse();
-
-      var lastThree = data.slice(0, 3);
-      var rest = data.slice(3);
-
-      if (index == 0) htmlData = rest;
-      else if (index == 1) pygameData = rest;
-      else otherData = rest;
-      lastThree.forEach((project, i) => {
-         var li = document.createElement("li");
-         var a = document.createElement("a");
-         var img = document.createElement("img");
-         var p = document.createElement("p");
-         li.style = "animation: 1s ease " + (0.2 * i) + "s 1 normal forwards running fade;";
-         a.className = "view-project";
-         a.setAttribute("onclick", "project_transition("+index+","+(i)+",'"+project[1]+"', event)");
-         a.href = "../project/" + project[1] + ".html";
-         a.textContent = "View";
-         img.src = "../image/project/" + project[1] + ".jpg";
-         img.alt = project[0];
-         img.loading = "lazy";
-         p.textContent = project[0];
-         li.appendChild(a);
-         li.appendChild(img);
-         li.appendChild(p);
-         container.appendChild(li);
-      });
-   });
-   
-   document.querySelectorAll(".show-more").forEach((button, index) => {
-      button.addEventListener("click", function() {
-         if (index == 0) show_more(0, htmlData);
-         else if (index == 1) show_more(1, pygameData);
-         else show_more(2, otherData);
-         button.style.display = "none";
-      });
-   });
-});
-
 loadHTML('header', 'subpageHeaderHTML', '../');
 loadHTML('footer', 'footerHTML', '../');
 window.addEventListener("load", function() {
    document.querySelector("body").style.display = "block";
 });
+
+const params = new URLSearchParams(window.location.search);
+const projectId = params.get("id");
+const project = projects[projectId];
+
+if (!project) {
+   document.body.innerHTML = "<h1>Project not found</h1>";
+   throw new Error("Invalid project ID");
+}
+
+document.getElementById("project-title").textContent = project.title;
+document.getElementById("project-description").textContent = project.description;
+
+document.title = `${project.title} - Ilovemath25`;
+
+// description
+const metaDesc = document.createElement("meta");
+metaDesc.name = "description";
+metaDesc.content = project.description;
+document.head.appendChild(metaDesc);
+
+// Open Graph helper
+function setOG(property, content) {
+   const meta = document.createElement("meta");
+   meta.setAttribute("property", property);
+   meta.content = content;
+   document.head.appendChild(meta);
+}
+
+setOG("og:title", `${project.title} - Ilovemath25`);
+setOG("og:description", project.description);
+setOG("og:type", "website");
+setOG("og:url", window.location.href);
+setOG("og:image", project.ogImage || "../media/profile.jpg");
+
+const overviewSection = document.getElementById("overview-container");
+
+project.overview.forEach(block => {
+   const wrapper = document.createElement("div");
+   wrapper.className = block.wrapper;
+
+   const order = block.order || ["mobile", "pc"];
+
+   order.forEach(key => {
+      const media = block[key];
+      if (!media) return;
+
+      if (media.type === "img") {
+         const img = document.createElement("img");
+         img.src = media.src;
+         img.className = `overview overview-${key} hidden`;
+         wrapper.appendChild(img);
+      } else {
+         const video = document.createElement("video");
+         video.src = media.src;
+         video.autoplay = true;
+         video.muted = true;
+         video.loop = true;
+         video.className = `overview overview-${key} hidden`;
+         wrapper.appendChild(video);
+      }
+   });
+   overviewSection.appendChild(wrapper);
+});
+
+document.getElementById("download-link").href = project.download;

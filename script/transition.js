@@ -1,17 +1,18 @@
-function project_transition(idx, index, link, event){
+function project_transition(idx, index, projectId, event) {
    if (event) event.preventDefault();
-   const project = document.querySelectorAll(".project")[idx].querySelectorAll('.project li')[index];
+   const project = document.querySelectorAll(".project")[idx].querySelectorAll(".project li")[index];
    const width = project.offsetWidth;
    const height = project.offsetHeight;
    project.style.width = `${width}px`;
    project.style.height = `${height}px`;
-   project.style.opacity = '1';
-   project.style.zIndex = "200"
+   project.style.opacity = "1";
+   project.style.zIndex = "200";
    project.style.cursor = "default";
    project.innerHTML = "";
    project.style.animation = "project_trans 2s";
-   window.setTimeout(function(){window.location.href = '../project/'+link+'.html';}, 700);
+   window.setTimeout(() => {window.location.href = `../content/project.html?id=${projectId}`;}, 700);
 }
+
 function home_transition(link, event){
    if (event) event.preventDefault();
    const animation = document.querySelector(".show-up-animation");
