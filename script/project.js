@@ -36,7 +36,7 @@ setOG("og:title", `${project.title} - Ilovemath25`);
 setOG("og:description", project.description);
 setOG("og:type", "website");
 setOG("og:url", window.location.href);
-setOG("og:image", project.ogImage || "../media/profile.jpg");
+setOG("og:image", `../media/project/${project.id}/${project.id}.jpg` || "../media/profile.jpg");
 
 const overviewSection = document.getElementById("overview-container");
 

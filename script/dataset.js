@@ -4,12 +4,12 @@ const skills = {
    'HTML': '80%',
    'CSS': '80%',
    'JavaScript': '70%',
-   'C': '60%',
-   'C++': '50%',
-   'PostgreSQL': '60%',
-   'Pascal': '60%',
+   'C': '50%',
+   'C++': '60%',
+   'PostgreSQL': '50%',
+   'Pascal': '50%',
    'Git': '70%',
-   'VHDL': '50%',
+   'VHDL': '40%',
 }
 const tools = [
    ['VS Code', 'vscode'],
@@ -35,9 +35,8 @@ const projects = {
       id: "xoxo",
       title: "XOXO",
       year: 2022,
-      type: "pygame",
+      type: "game",
       description: "My first-ever Pygame program was 'XOXO,' a simple yet fun Tic-Tac-Toe game. It's a remake of a game I originally created in Pascal, rebuilt using Python. This project marked my introduction to game development.",
-      ogImage: "../media/work/xoxo/xoxo_1.png",
       download: "https://github.com/ilovemath25/XOXO/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("xoxo", "xoxo_1.png")),
@@ -52,9 +51,8 @@ const projects = {
       id: "snake",
       title: "Snake",
       year: 2023,
-      type: "pygame",
+      type: "game",
       description: "The Snake game was my second Python game after XOXO. I chose this classic game because who doesn't love Snake games? It was a fun challenge and helped me level up my Python skills.",
-      ogImage: "../media/work/snake/snake_1.png",
       download: "https://github.com/ilovemath25/Snake/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("snake", "snake_1.png")),
@@ -71,7 +69,6 @@ const projects = {
       year: 2023,
       type: "html",
       description: "My very first website project. Built with my group '4 Years Graduate', this Movie Recommender suggests films based on user preferences. I handled the frontend while my teammates worked on the backend.",
-      ogImage: "../media/work/movie_recommender/movie_recommender_1.png",
       download: "https://github.com/ilovemath25/Movie-Recommender/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("movie_recommender", "movie_recommender_1.png")),
@@ -88,7 +85,6 @@ const projects = {
       year: 2023,
       type: "html",
       description: "A group project from my second year where we developed a hotel booking website using Python Flask and PostgreSQL. While not responsive, it was a major milestone in my web development journey.",
-      ogImage: "../media/work/hotel_booking/hotel_booking_1.jpg",
       download: "https://github.com/ilovemath25/Hotel-booking/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("hotel_booking", "hotel_booking_1.jpg")),
@@ -103,9 +99,8 @@ const projects = {
       id: "animaldoku",
       title: "Animaldoku",
       year: 2024,
-      type: "pygame",
+      type: "game",
       description: "After finishing the Snake game, I created Animaldoku — a Sudoku-style puzzle game with an animal theme. This was my first mouse-based game and includes background music to enhance the experience.",
-      ogImage: "../media/work/animaldoku/animaldoku_1.png",
       download: "https://github.com/ilovemath25/Animaldoku/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("animaldoku", "animaldoku.mp4")),
@@ -120,9 +115,8 @@ const projects = {
       id: "number_recognition",
       title: "Number Recognition",
       year: 2024,
-      type: "pygame",
+      type: "AI",
       description: "This is my very first AI neural network built from scratch. It's designed to recognize handwriting and identify numbers. The accuracy is currently around 80%, which isn't too bad for a first attempt.",
-      ogImage: "../image/work/number_recognition/number_recognition_1.png",
       download: "https://github.com/ilovemath25/Number-Recognition/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("number_recognition", "number_recognition.mp4")),
@@ -140,7 +134,6 @@ const projects = {
       year: 2024,
       type: "html",
       description: "This website is my first-ever fully responsive project and the most challenging one I've built so far. It serves as a diary of my journey through web development.",
-      ogImage: "../image/work/portfolio/portfolio_1.png",
       download: "#",
       overview: [
          wrap("mobile-and-pc", {
@@ -167,7 +160,6 @@ const projects = {
       year: 2024,
       type: "other",
       description: "I implemented SHA-256 from scratch by referencing the original white paper. It processes an input and generates a fixed-size 256-bit cryptographic hash.",
-      ogImage: "../image/work/sha256/sha256_1.png",
       download: "https://github.com/ilovemath25/SHA-256/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("sha256", "sha256_1.png")),
@@ -182,7 +174,6 @@ const projects = {
       year: 2024,
       type: "html",
       description: "A website that helps users create and manage test cases for coding projects. Built to solve my own struggles with testing program outputs.",
-      ogImage: "../image/work/testcase/testcase_1.png",
       download: "https://github.com/ilovemath25/Test-Case/archive/refs/heads/main.zip",
       overview: [
          wrap("mobile-and-pc", {
@@ -212,9 +203,8 @@ const projects = {
       id: "tetris",
       title: "Tetris",
       year: 2024,
-      type: "pygame",
+      type: "game",
       description: "A Pygame version of Tetris with music, sound effects, and enhanced mouse interaction, making it more dynamic and fun to play.",
-      ogImage: "../image/work/tetris/tetris_1.png",
       download: "https://github.com/ilovemath25/Tetris/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("tetris", "tetris.mp4")),
@@ -232,7 +222,6 @@ const projects = {
       year: 2024,
       type: "other",
       description: "A rotating 3D ASCII donut rendered in the terminal. A fun project exploring 3D math and ASCII graphics.",
-      ogImage: "../image/work/donut/donut_1.png",
       download: "https://github.com/ilovemath25/Donut/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("donut", "donut.mp4")),
@@ -246,7 +235,6 @@ const projects = {
       year: 2025,
       type: "html",
       description: "A group e-commerce project for an online bookstore using HTML, CSS, JavaScript, Flask, and PostgreSQL. Homepage was responsive, others partially optimized.",
-      ogImage: "../image/work/ebookstore/ebookstore_1.png",
       download: "https://github.com/ilovemath25/E-Bookstore/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("ebookstore", "ebookstore_1.mp4")),
@@ -266,9 +254,8 @@ const projects = {
       id: "gulu_gulu",
       title: "Gulu Gulu",
       year: 2024,
-      type: "pygame",
+      type: "game",
       description: "A pixel-art adventure game created for my first game competition, in collaboration with my sister. Players can change size, solve puzzles, and explore rooms.",
-      ogImage: "../image/work/gulu_gulu/gulu_gulu_1.png",
       download: "https://github.com/ilovemath25/GuluGulu/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_1.png")),
@@ -276,4 +263,21 @@ const projects = {
          wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_3.png"))
       ]
    },
+
+   castlevania: {
+      id: "castlevania",
+      title: "Castlevania",
+      year: 2025,
+      type: "game",
+      description: "In our class, we were assigned a project to remake a game in a group of two for our OOP Semester 2 course. We chose Castlevania because it has a lot of available assets. This project was built using OOP concepts and C++, and recreates the original gameplay with one level and five stages. It helped us practice programming in a fun and hands-on way.",
+      download: "https://github.com/jeon0121/Castlevania/archive/refs/heads/main.zip",
+      overview: [
+         wrap("pc-only", pcVideo("castlevania", "castlevania.mp4")),
+         wrap("pc-only", pcImg("castlevania", "castlevania_1.png")),
+         wrap("pc-only", pcImg("castlevania", "castlevania_2.png")),
+         wrap("pc-only", pcImg("castlevania", "castlevania_3.png")),
+         wrap("pc-only", pcImg("castlevania", "castlevania_4.png")),
+         wrap("pc-only", pcImg("castlevania", "castlevania_5.png")),
+      ]
+   }
 };

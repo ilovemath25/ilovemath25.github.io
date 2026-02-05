@@ -22,6 +22,19 @@ function createProjectItem(project, sectionIndex, itemIndex) {
    li.append(a, img, p);
    return li;
 }
+// Open Graph helper
+function setOG(property, content) {
+   const meta = document.createElement("meta");
+   meta.setAttribute("property", property);
+   meta.content = content;
+   document.head.appendChild(meta);
+}
+
+setOG("og:title", `Projects - Ilovemath25`);
+setOG("og:description", "Explore my projects including HTML, Pygame, and other random projects.");
+setOG("og:type", "website");
+setOG("og:url", window.location.href);
+setOG("og:image", "../media/profile.jpg");
 
 document.addEventListener("DOMContentLoaded", () => {
    const main = document.getElementById("project-sections");
@@ -41,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const label = document.createElement("label");
       label.className = "title-and-line";
       label.innerHTML = `
-         <div class="title-line" style="background-image: linear-gradient(to right,#00000000,#de4040);"></div>
+         <div class="title-line left"></div>
          <div class="title-title">${type.toUpperCase()} Project</div>
-         <div class="title-line" style="background-image: linear-gradient(to right,#de4040,#00000000);"></div>
+         <div class="title-line right"></div>
       `;
       main.appendChild(label);
 
