@@ -279,5 +279,18 @@ const projects = {
          wrap("pc-only", pcImg("castlevania", "castlevania_4.png")),
          wrap("pc-only", pcImg("castlevania", "castlevania_5.png")),
       ]
-   }
+   },
+
+   med_speech_rec: {
+      id: "med_speech_rec",
+      title: "AICUP Medical Speech Recognition",
+      year: 2025,
+      type: "AI",
+      description: "In my third-year semester, I joined an NLP class where the final project required us to participate in the AICUP competition, and together with two classmates, we built this project to recognize doctor-patient speech and tag sensitive health information using speech-to-text and named entity recognition models.",
+      download: "https://github.com/ilovemath25/AICUP-Medical-Privacy-Voice-Recognition-Competition/archive/refs/heads/main.zip",
+      overview: [
+         wrap("pc-only", pcImg("med_speech_rec", "med_speech_rec_1.png")),
+         wrap("pc-only", pcImg("med_speech_rec", "med_speech_rec_2.png")),
+      ]
+   },
 };

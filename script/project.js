@@ -59,7 +59,7 @@ project.overview.forEach(block => {
          const video = document.createElement("video");
          video.src = media.src;
          video.autoplay = true;
-         video.muted = true;
+         // video.muted = true;
          video.loop = true;
          video.className = `overview overview-${key} hidden`;
          wrapper.appendChild(video);

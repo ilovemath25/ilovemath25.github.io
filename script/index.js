@@ -27,7 +27,7 @@ function createProjectItem(project, sectionIndex, itemIndex) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-   const recentProjects = ["html", "pygame", "other"]
+   const recentProjects = ["html", "game", "AI"]
       .map(type =>
          Object.values(projects)
          .filter(p => p.type === type)
