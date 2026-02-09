@@ -68,4 +68,8 @@ project.overview.forEach(block => {
    overviewSection.appendChild(wrapper);
 });
 
-document.getElementById("download-link").href = project.download;
+if (project.download) {
+   document.getElementById("download-link").href = project.download;
+} else {
+   document.getElementById("download-link").style.display = "none";
+}

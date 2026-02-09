@@ -293,4 +293,19 @@ const projects = {
          wrap("pc-only", pcImg("med_speech_rec", "med_speech_rec_2.png")),
       ]
    },
+
+   sbbot: {
+      id: "sbbot",
+      title: "SbBot: Generate keyword and Rflint fix",
+      year: 2025,
+      type: "AI",
+      description: "As our final project, we created sbBot to solve the frustrations we faced as interns at Sunbird DCIM with repetitive test script formatting and naming. By using RAG, we built a system that learns from company documents to automatically generate professional code and consistent naming suggestions, turning our own struggles into a fast, automated workflow.",
+      download: "",
+      overview: [
+         wrap("pc-only", pcImg("sbbot", "sbbot_1.png")),
+         wrap("pc-only", pcImg("sbbot", "sbbot_2.png")),
+         wrap("pc-only", pcImg("sbbot", "sbbot_3.png")),
+         wrap("pc-only", pcImg("sbbot", "sbbot_4.png")),
+      ] 
+   }
 };
