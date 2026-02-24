@@ -307,5 +307,20 @@ const projects = {
          wrap("pc-only", pcImg("sbbot", "sbbot_3.png")),
          wrap("pc-only", pcImg("sbbot", "sbbot_4.png")),
       ] 
-   }
+   },
+
+   lc_helper: {
+      id: "lc_helper",
+      title: "LeetCode Helper (VS Code Extension)",
+      year: 2026,
+      type: "extension",
+      description: "I built this VS Code extension to help myself debug LeetCode problems locally. It provides scaffolding, test case management, and run/debug support, allowing me to simulate LeetCode behavior inside VS Code and improve my problem-solving workflow.",
+      download: "https://github.com/ilovemath25/leetcode-helper-extension",
+      overview: [
+         wrap("pc-only", pcVideo("lc_helper", "lc_helper.mp4")),
+         wrap("pc-only", pcImg("lc_helper", "lc_helper_1.png")),
+         wrap("pc-only", pcImg("lc_helper", "lc_helper_2.png")),
+         wrap("pc-only", pcImg("lc_helper", "lc_helper_3.png")),
+      ]
+   },
 };
