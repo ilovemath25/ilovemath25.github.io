@@ -6,6 +6,7 @@ const skills = {
    'JavaScript': '70%',
    'C': '50%',
    'C++': '60%',
+   'CSharp': '60%',
    'PostgreSQL': '50%',
    'Pascal': '50%',
    'Git': '70%',
@@ -19,6 +20,7 @@ const tools = [
    ['PyCharm', 'pycharm'],
    ['Dev-Pascal', 'devpascal'],
    ['Quartus', 'quartus'],
+   ['Unity', 'unity'],
 ];
 
 // project dataset
@@ -314,7 +316,7 @@ const projects = {
       year: 2026,
       type: "extension",
       description: "I built this VS Code extension to help myself debug LeetCode problems locally. It provides scaffolding, test case management, and run/debug support, allowing me to simulate LeetCode behavior inside VS Code and improve my problem-solving workflow.",
-      download: "https://github.com/ilovemath25/leetcode-helper-extension",
+      download: "https://github.com/ilovemath25/leetcode-helper-extension/archive/refs/heads/main.zip",
       overview: [
          wrap("pc-only", pcVideo("lc_helper", "lc_helper.mp4")),
          wrap("pc-only", pcImg("lc_helper", "lc_helper_1.png")),
@@ -329,7 +331,6 @@ const projects = {
       year: 2026,
       type: "other",
       description: "Collaborated on the development of an immersive mixed reality experience for Meta Quest 3. The project combines interactive 3D maps, location-based exploration, and virtual content to create an engaging Taipei exploration experience. Contributed to Unity development, scene setup, and interactive features.",
-      download: "",
       overview: [
          wrap("pc-only", pcVideo("outsider_of_taipei", "outsider_of_taipei_1.mp4")),
          wrap("pc-only", pcVideo("outsider_of_taipei", "outsider_of_taipei_2.mp4")),
@@ -337,6 +338,20 @@ const projects = {
          wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_2.png")),
          wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_3.png")),
          wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_4.png")),
+      ]
+   },
+
+   oops_i_froze: {
+      id: "oops_i_froze",
+      title: "Oops, I Froze!",
+      year: 2026,
+      type: "game",
+      description: "A 2D puzzle-platformer developed in Unity for Game Jam 2026, featuring a time-based freezing mechanic. Every few seconds, the player turns into a stone that can be used as a platform to solve puzzles and overcome obstacles. I implemented the core gameplay systems, while my teammate handled puzzle and game design.",
+      download: "https://github.com/ilovemath25/Oops_I_Froze/archive/refs/heads/main.zip",
+      overview: [
+         wrap("pc-only", pcImg("oops_i_froze", "oops_i_froze_1.png")),
+         wrap("pc-only", pcImg("oops_i_froze", "oops_i_froze_2.png")),
+         wrap("pc-only", pcImg("oops_i_froze", "oops_i_froze_3.png")),
       ]
    },
 };
