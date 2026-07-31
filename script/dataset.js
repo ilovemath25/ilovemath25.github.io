@@ -229,6 +229,20 @@ const projects = {
       ]
    },
 
+   gulu_gulu: {
+      id: "gulu_gulu",
+      title: "Gulu Gulu",
+      year: 2024,
+      type: "game",
+      description: "A pixel-art adventure game created for my first game competition, in collaboration with my sister. Players can change size, solve puzzles, and explore rooms.",
+      download: "https://github.com/ilovemath25/GuluGulu/archive/refs/heads/main.zip",
+      overview: [
+         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_1.png")),
+         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_2.png")),
+         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_3.png"))
+      ]
+   },
+
    ebookstore: {
       id: "ebookstore",
       title: "Ebookstore",
@@ -247,20 +261,6 @@ const projects = {
          wrap("pc-only", pcImg("ebookstore", "ebookstore_5.png")),
          wrap("pc-only", pcImg("ebookstore", "ebookstore_6.png")),
          wrap("pc-only", pcImg("ebookstore", "ebookstore_7.png"))
-      ]
-   },
-
-   gulu_gulu: {
-      id: "gulu_gulu",
-      title: "Gulu Gulu",
-      year: 2024,
-      type: "game",
-      description: "A pixel-art adventure game created for my first game competition, in collaboration with my sister. Players can change size, solve puzzles, and explore rooms.",
-      download: "https://github.com/ilovemath25/GuluGulu/archive/refs/heads/main.zip",
-      overview: [
-         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_1.png")),
-         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_2.png")),
-         wrap("pc-only", pcImg("gulu_gulu", "gulu_gulu_3.png"))
       ]
    },
 
@@ -300,7 +300,6 @@ const projects = {
       year: 2025,
       type: "AI",
       description: "As our final project, we created sbBot to solve the frustrations we faced as interns at Sunbird DCIM with repetitive test script formatting and naming. By using RAG, we built a system that learns from company documents to automatically generate professional code and consistent naming suggestions, turning our own struggles into a fast, automated workflow.",
-      download: "",
       overview: [
          wrap("pc-only", pcImg("sbbot", "sbbot_1.png")),
          wrap("pc-only", pcImg("sbbot", "sbbot_2.png")),
@@ -321,6 +320,23 @@ const projects = {
          wrap("pc-only", pcImg("lc_helper", "lc_helper_1.png")),
          wrap("pc-only", pcImg("lc_helper", "lc_helper_2.png")),
          wrap("pc-only", pcImg("lc_helper", "lc_helper_3.png")),
+      ]
+   },
+
+   outsider_of_taipei: {
+      id: "outsider_of_taipei",
+      title: "Outsider of Taipei (靠近臺北)",
+      year: 2026,
+      type: "other",
+      description: "Collaborated on the development of an immersive mixed reality experience for Meta Quest 3. The project combines interactive 3D maps, location-based exploration, and virtual content to create an engaging Taipei exploration experience. Contributed to Unity development, scene setup, and interactive features.",
+      download: "",
+      overview: [
+         wrap("pc-only", pcVideo("outsider_of_taipei", "outsider_of_taipei_1.mp4")),
+         wrap("pc-only", pcVideo("outsider_of_taipei", "outsider_of_taipei_2.mp4")),
+         wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_1.png")),
+         wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_2.png")),
+         wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_3.png")),
+         wrap("pc-only", pcImg("outsider_of_taipei", "outsider_of_taipei_4.png")),
       ]
    },
 };
